@@ -1,0 +1,178 @@
+:root {
+--Very-dark-blue: hsl(233, 47%, 7%); /* Bg body */
+--Dark-desaturated-blue: hsl(244, 38%, 16%); /* Bg Card*/
+--Soft-violet: hsl(277, 64%, 61%); /* Span */
+}
+
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Very-dark-blue);
+}
+
+p {
+    font-size: 15px;
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1600px) { /*Desktop */
+   
+main {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px 0 0 10px;
+    width: 66%;
+    height: 61%;
+    background-color: var(--Dark-desaturated-blue);
+    }
+
+    .dados {
+        height: 20%;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    main .info {
+        padding: 20px;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 10px 40px;
+    }
+    
+    .image {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .info .p-info {
+        font-family: 'Inter';
+        font-weight: 500;
+        transform: translateY(-30px);
+        text-align: start;
+        width: 100%;
+        height: 20%;
+        color: #e4e4e4b5;
+        word-spacing: 1px;
+        line-height: 25px;
+        transition: transform 0.7s ease-in-out;
+    }
+    
+    .info h1 {
+        width: 100%;
+    }
+
+    .item p {
+        margin: 0;
+        color: #b2b2b26a;
+        font-family: 'Inter';
+    }
+    
+    .item h3 {
+        margin: 3px;
+    }
+    
+
+}
+
+
+
+@media (min-width: 375px) and (max-width: 426px) { /* Mobile (M, G)*/
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 10px 0 0 10px;
+        width: 54.4%;
+        height: 70%;
+        background-color: var(--Dark-desaturated-blue);
+        text-align: center;
+        }
+
+       .image {
+        content: url(../images/image-header-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+       }
+    
+       .dados {
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main .info {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+    }
+
+    .info .p-info {
+        font-family: 'Inter';
+        font-weight: 400;
+        transform: translateY(-15px);
+        width:100%;
+        height: 20%;
+        color: #e4e4e4b5;
+        word-spacing: 1px;
+        line-height: 20px;
+        transition: transform 0.7s ease-in-out;
+    }
+
+    .info h1 {
+        width: 100%;
+    }
+
+    .item p {
+        margin: 0;
+        color: #b2b2b2cb;
+        font-family: 'Inter';
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+    .item h3 {
+        margin: 3px;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    
+}
+
+
+
+.info h1, h3 {
+    font-family: 'Lexend Deca';
+    color: #fff;
+}
+
+span {
+    color: var(--Soft-violet);
+}
+
+
+
+.attribution {
+    color: #fff;
+    margin: 20px;
+    font-size: 11px;
+    text-align: center;
+ }
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
